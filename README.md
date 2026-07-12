@@ -33,6 +33,8 @@ The op-amp consists of:
 | Supply Voltage | ±2.5 V |
 | Compensation Capacitor | 1 pF |
 | Bias Current | 50 µA |
+| Overdrive Voltage | 0.3V |
+| w/L ratios | Calculated as per Vov and kn' |
 
 ---
 
@@ -45,9 +47,7 @@ The op-amp consists of:
 | Gain Bandwidth Product | ~27 MHz |
 | Phase Margin | ~63° |
 | Output Swing | ≈ ±2.2 V (linear region) |
-| Common Mode Gain | Verified |
-| CMRR | Verified |
-| Slew Rate | Measured from transient simulation |
+| Common Mode Gain | ~7 dB |
 
 ---
 
@@ -85,6 +85,21 @@ The following analytical expressions were verified using simulation:
 - Phase Margin
 - CMRR
 - Slew Rate
+
+---
+## Theoretical Validation
+
+A complete hand analysis was performed prior to simulation. The simulated results closely matched the theoretical predictions, validating the design methodology and small-signal analysis.
+
+| Parameter | Theoretical | Simulation | Error |
+|-----------|------------:|-----------:|------:|
+| Open Loop Gain | 270 V/V (48.6 dB) | ≈48 dB | < 2% |
+| 3-dB Bandwidth | 103 kHz | 102 kHz | < 1% |
+| Gain Bandwidth Product | ≈28 MHz | ≈27 MHz | ≈3% |
+| Phase Margin | ≈63° | ≈63° | < 1% |
+| Common Mode Gain | ≈−6.7 dB | ≈−7 dB | ≈0.3 dB |
+| Output Swing | ±2.2 V | ≈±2.2 V (linear region) | Close Match |
+| ICMR | −1.73 V to 1.4 V | Verified through DC Analysis | Verified |
 
 ---
 
