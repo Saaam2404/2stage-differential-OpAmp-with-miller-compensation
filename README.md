@@ -42,7 +42,7 @@ The op-amp consists of:
 
 | Parameter | Result |
 |-----------|---------|
-| Open Loop Gain | ~45 dB |
+| Open Loop Gain | ~48 dB |
 | 3-dB Bandwidth | ~102 kHz |
 | Gain Bandwidth Product | ~27 MHz |
 | Phase Margin | ~63° |
