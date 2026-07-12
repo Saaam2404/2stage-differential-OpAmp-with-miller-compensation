@@ -62,8 +62,6 @@ The op-amp consists of:
 ### Small-Signal Analysis
 - Differential Gain
 - Common Mode Gain
-- Common Mode Rejection Ratio (CMRR)
-- Input and Output Resistance
 
 ### Frequency Response
 - Bode Plot
@@ -72,11 +70,6 @@ The op-amp consists of:
 - Gain Bandwidth Product (GBW)
 - Phase Margin
 - Miller Compensation Analysis
-
-### Transient Analysis
-- Slew Rate Measurement
-- Large Signal Response
-- Unity Gain Buffer Verification
 
 ---
 
